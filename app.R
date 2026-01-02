@@ -306,7 +306,7 @@ server <- shinyServer(function(input, output, session) {
         ylab("Bacterial generations") +
         labs(color='Researcher') +
         scale_color_manual(values = okabe) +
-        scale_y_continuous(label=comma, expand = expansion(mult = c(0, 0))) +
+        scale_y_continuous(label=comma, expand = expansion(mult = c(0, 0.01))) +
         scale_x_date(limits=c(input$start_date, input$end_date), expand = expansion(mult = c(0, 0))) +
         theme(
           axis.text=element_text(size=14), 
